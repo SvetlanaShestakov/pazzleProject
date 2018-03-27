@@ -1,36 +1,37 @@
 package course.puzzle;
 
 public class PuzzlePiece {
-    private int left;
-    private int top;
-    private int right;
-    private int bottom;
     private int id;
+    private Edge left;
+    private Edge top;
+    private Edge right;
+    private Edge bottom;
+
 
 
 
     public PuzzlePiece(int id,int left, int top, int right, int bottom) {
         this.id = id;
-        this.left = left;
-        this.top = top;
-        this.right = right;
-        this.bottom = bottom;
+        this.left = new Edge("left",left);
+        this.top = new Edge("top",top);
+        this.right = new Edge("right",right);
+        this.bottom = new Edge("bottom",bottom);
 
     }
 
-    public int getLeft() {
+    public Edge getLeft() {
         return left;
     }
 
-    public int getTop() {
+    public Edge getTop() {
         return top;
     }
 
-    public int getRight() {
+    public Edge getRight() {
         return right;
     }
 
-    public int getBottom() {
+    public Edge getBottom() {
         return bottom;
     }
 
