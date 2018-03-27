@@ -1,4 +1,4 @@
-package course.pazzel1;
+package course.puzzle;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
